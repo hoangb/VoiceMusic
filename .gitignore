@@ -105,5 +105,10 @@ venv.bak/
 
 # Other
 .idea
+.idea/VoiceMusic.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
 client_key.txt
 app/client_key.txt
