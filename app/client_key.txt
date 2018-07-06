@@ -1,2 +1,2 @@
-ClientID=4f431d45513f4ec9bff9a8269be579ea
-ClientSecret=356d2c05ce294625ad8c1cf6ef717359
+ClientID=privateKey
+ClientSecret=spotifysecret
