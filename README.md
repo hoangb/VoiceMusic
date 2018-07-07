@@ -11,7 +11,7 @@ Dependencies:
 
 Installation Commands:
 ````
-- pip install Flask
+- pip3 install Flask
 - pip install spotipy
 - pip install SpeechRecognition
 - pip install pyttsx3

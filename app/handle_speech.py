@@ -42,12 +42,3 @@ class AudioHandle:
         engine.setProperty('voice', voices[7].id)
         engine.say(command)
         engine.runAndWait()
-
-
-
-
-
-
-
-
-

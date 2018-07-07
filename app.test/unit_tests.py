@@ -1,16 +1,15 @@
 import unittest
-from app import helper
-from app import handle_speech as speech_module
 
 class TestMethods(unittest.TestCase):
-    def setUp(self):
-        print("\n----> Running:", self._testMethodName)
 
-    def tearDown(self):
-        print("\n")
+    def testcase_run_voice_command(self):
+        try:
+            from app import handle_speech as speech_module
 
-
-
+            start = speech_module.AudioHandle()
+            start.record()
+        except ImportWarning:
+            pass
 
     def testcase_spotify_non_authorized_requests(self):
         import spotipy
@@ -31,9 +30,11 @@ class TestMethods(unittest.TestCase):
             i = i.split("=")[1]
             print(i)
 
+    def setUp(self):
+        print("\n----> Running:", self._testMethodName)
 
-
-
+    def tearDown(self):
+        print("---->End.")
 
 
 if __name__ == '__main__':
