@@ -18,4 +18,6 @@ Installation Commands:
 - pip install pyaudio
 - pip install pyobjc
 - brew install portaudio
+- pip install beautifulsoup4
+- pip install urllib3
 ````

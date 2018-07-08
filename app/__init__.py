@@ -1,5 +1,6 @@
 # !/usr/bin/env python3
 from flask import Flask, render_template, url_for
+from app import handle_youtube_requests as youtube_requests
 import os
 
 app = Flask(__name__)
@@ -31,11 +32,14 @@ def _dated_url_for(endpoint, **values):
 def index():
     placeholder_variable1 = "Placeholder 1"
     placeholder_variable2 = "Placeholder 2"
+    query = youtube_requests.YoutubeHandle("Drake")
+    print(query.get_embedded_link_source())
+    embedded_link = query.get_embedded_link_source()
     return render_template("index.html", **locals())
 
 
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run(port=8080, debug=True)
 
 
 
